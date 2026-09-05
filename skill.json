@@ -1,0 +1,36 @@
+{
+  "name": "genpark-canary-honeytoken-private-key-tripwire-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous honeytoken decoy private key tripwire detecting mempool intrusion attempts and triggering automated credential revocation.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "crypto",
+  "tags": [
+    "canary-token",
+    "honeytoken",
+    "private-key-tripwire",
+    "intrusion-detection",
+    "web3-security"
+  ],
+  "inputs": {
+    "canary_address": {
+      "type": "string"
+    },
+    "chain_id": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "tripwire_session_id": {
+      "type": "string"
+    },
+    "tripwire_status": {
+      "type": "string"
+    },
+    "mempool_tampering_detected": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
